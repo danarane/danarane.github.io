@@ -82,15 +82,15 @@
     dots[slideIndex-1].className += " w3-white";
   }
   </script>
-
 <div class="col-12"></div>
-<div class="row" id="video"></div>
+<div class="row"></div>
+<div class="col-12" id="video"></div>
 <!-- Video -->
 <div class="col-1"></div>
 <div class="col-10 tab">
   <h5 class="w3-center"><span class="w3-tag w3-wide">Video</span></h5>
   <div class="col-5"></div>
-  <button class="col-1 tablinks" onclick="openCity(event, 'Film')">Film</button>
+  <button class="col-1 tablinks" onclick="openCity(event, 'Film')" id="defaultOpen">Film</button>
   <button class="col-1 tablinks" onclick="openCity(event, 'Animation')">Animation</button>
 </div>
 <div class="row"></div>
@@ -132,7 +132,10 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+    }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 </script>
 
 <div class="col-12"></div>
