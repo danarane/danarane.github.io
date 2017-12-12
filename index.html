@@ -19,129 +19,154 @@
 <!-- Navigation -->
 <div class="row top">
   <div class="col-4"></div>
-  <div class="col-1 mybutton white" href="#dana">
-    <i class="fa fa-eye fa-3x" style="color:#AB0000" aria-hidden="true"></i>
-  </div>
-  <div class="col-1 mybutton white" href="#design">
-    <i class="fa fa-file-image-o fa-3x" style="color:#AB0000" aria-hidden="true"></i></a></div>
-  <div class="col-1 mybutton white" href="#video">
-    <i class="fa fa-file-video-o fa-3x" style="color:#AB0000" aria-hidden="true"></i>
-  </div>
-  <div class="col-1 mybutton white" href="#who">
-    <i class="fa fa-question-circle-o fa-3x" style="color:#AB0000" aria-hidden="true"></i>
-  </div>
+  <a href="#dana"><div class="col-1 mybutton white"><i class="fa fa-eye fa-3x" style="color:#AB0000" aria-hidden="true"></i></div></a>
+  <a href="#design"><div class="col-1 mybutton white"><i class="fa fa-file-image-o fa-3x" style="color:#AB0000" aria-hidden="true"></i></div></a>
+  <a href="#video"><div class="col-1 mybutton white"><i class="fa fa-file-video-o fa-3x" style="color:#AB0000" aria-hidden="true"></i></div></a>
+  <a href="#who"><div class="col-1 mybutton white"><i class="fa fa-question-circle-o fa-3x" style="color:#AB0000" aria-hidden="true"></i></div></a>
   <div class="col-4"></div>
 </div>
 
 <!-- Dana -->
-<div class= "container" id="dana"><img class ="dana" src="../pics/flowers.jpg">
+<div class= "container" id="dana"><img class ="dana">
     <div class="centered"><h2 class="large">Dana<br style=width:"50%";>Rane</h2>
     </div>
 </div>
 
+
+<div class="col-12"></div>
 <!-- Design -->
-<div class="row" id="design">
-  <h5 class="centered"><span class="w3-tag w3-wide">Design</span></h5>
-  <div class="col-4"></div>
-  <div class="col-5"></div>
-    <div class="w3-content w3-section">
-        <img class="mySlides" src="pics/marble.jpg" style="width:100%">
-        <img class="mySlides" src="pics/dog.jpg" style="width:100%">
-        <img class="mySlides" src="pics/red.jpg" style="width:100%">
-      <div class="bottom-center" style="width:100%">
-        <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+<div class="container" id="design">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Design</span></h5>
+    <div class="w3-content w3-display-container" style="max-width:800px max-height:600px">
+      <img class="mySlides" src="pics/marble.jpg" style="width:100%">
+      <img class="mySlides" src="pics/dog.jpg" style="width:100%">
+      <img class="mySlides" src="pics/red.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
       </div>
     </div>
-  <div class="col-4"></div>
-
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="pics/marble.jpg">
-  <img class="mySlides" src="pics/dog.jpg">
-  <img class="mySlides" src="pics/red.jpg">
-  <div class="w3-center w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
   </div>
 </div>
 
-<!-- Video -->
-  <div class="w3-container" id="video">
-    <div class="w3-content" style="max-width:700px">
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
-      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Video</span></h5>
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
 
-      <div class="w3-row w3-center w3-card-2 w3-padding">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Film');" id="myLink">
-          <div class="w3-col s6 tablink">Film</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Animation');">
-          <div class="w3-col s6 tablink">Animation</div>
-        </a>
-      </div>
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
 
-      <div id="Film" class="w3-container menu w3-padding-48 w3-card-2">
-        <h5>Bread Basket</h5>
-        <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-        <h5>Honey Almond Granola with Fruits</h5>
-        <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-        <h5>Belgian Waffle</h5>
-        <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-        <h5>Scrambled eggs</h5>
-        <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-        <h5>Blueberry Pancakes</h5>
-        <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-      </div>
-
-      <div id="Animation" class="w3-container menu w3-padding-48 w3-card-2">
-        <h5>Coffee</h5>
-        <p class="w3-text-grey">Regular coffee 2.50</p><br>
-
-        <h5>Chocolato</h5>
-        <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-        <h5>Corretto</h5>
-        <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-        <h5>Iced tea</h5>
-        <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-        <h5>Soda</h5>
-        <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-      </div>
-      <img src="/Macintosh HD/users/danawachsmuth/Applications/MAMP/htdocs/pics/flower.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-    </div>
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
+  function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+
+<div class="col-12" id="video"></div>
+<div class="row"></div>
+<!-- Video -->
+<div class="col-1"></div>
+<div class="col-10 tab">
+  <h5 class="w3-center"><span class="w3-tag w3-wide">Video</span></h5>
+  <div class="col-5"></div>
+  <button class="col-1 tablinks" onclick="openCity(event, 'Film')">Film</button>
+  <button class="col-1 tablinks" onclick="openCity(event, 'Animation')">Animation</button>
+</div>
+<div class="row"></div>
+<div class="col-1"></div>
+<div id="Film" class="col-10 tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+<div class="row"></div>
+<div class="col-1"></div>
+<div id="Animation" class="col-10 tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 </script>
 
+<div class="col-12"></div>
+<!-- Contact -->
+<div class="row"></div>
+<div class="col-3"></div>
+<h5 class="col 6 w3-center"><span class="w3-tag w3-wide">Contact Me!</span></h5>
+<div class="w3-container" id="who" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
 
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Phone Number" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
 
+<script>
+//scrolling
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 </body>
 </html>
